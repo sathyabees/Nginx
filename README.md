@@ -48,8 +48,14 @@ minikube version
 
 Deploying Nginx container on Kubernetes
 ---------------------------------------
+vi /tmp/nginx.yaml
+vi /tmp/service.yaml
 
+kubectl create -f /tmp/nginx.yaml
+kubectl create -f /tmp/service.yaml
 
+Alternate steps
+===============
 1. Deploying Nginx Container
 
   kubectl run sample-nginx --image=nginx  --port=80
